@@ -41,7 +41,7 @@ import com.sonyericsson.jenkins.plugins.bfa.test.utils.Whitebox;
 import hudson.ExtensionList;
 import hudson.util.Secret;
 import net.sf.json.JSONObject;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Test;
 import org.jvnet.hudson.test.JenkinsRule;
 import org.jvnet.hudson.test.junit.jupiter.WithJenkins;

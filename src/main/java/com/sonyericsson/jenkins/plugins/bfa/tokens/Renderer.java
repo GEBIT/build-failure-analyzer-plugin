@@ -30,8 +30,8 @@ import com.sonyericsson.jenkins.plugins.bfa.model.FoundFailureCause;
 import com.sonyericsson.jenkins.plugins.bfa.model.indication.FoundIndication;
 import hudson.matrix.MatrixRun;
 import jenkins.model.Jenkins;
-import org.apache.commons.lang.StringEscapeUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.text.StringEscapeUtils;
+import org.apache.commons.lang3.StringUtils;
 import java.util.logging.Logger;
 
 import java.io.IOException;
@@ -147,7 +147,7 @@ public class Renderer {
         if (data.getFoundFailureCauses().isEmpty() && data.getDownstreamFailureCauses().isEmpty()) {
             logger.info("there were no causes");
             if (!useHtmlFormat && escapeHtml) {
-                return StringEscapeUtils.escapeHtml(noFailureText);
+                return StringEscapeUtils.escapeHtml4(noFailureText);
             } else {
                 return noFailureText;
             }
@@ -255,7 +255,7 @@ public class Renderer {
                 }
                 String str = lines.get(lineIndex);
                 if (escapeHtml) {
-                    str = StringEscapeUtils.escapeHtml(str);
+                    str = StringEscapeUtils.escapeHtml4(str);
                 }
                 stringBuilder.append(str);
                 stringBuilder.append("\n");
@@ -395,7 +395,7 @@ public class Renderer {
             stringBuilder.append(LIST_BULLET);
             String fullDisplayName = matrixRun.getFullDisplayName();
             if (escapeHtml) {
-                fullDisplayName = StringEscapeUtils.escapeHtml(fullDisplayName);
+                fullDisplayName = StringEscapeUtils.escapeHtml4(fullDisplayName);
             }
             stringBuilder.append(fullDisplayName);
             stringBuilder.append("\n");

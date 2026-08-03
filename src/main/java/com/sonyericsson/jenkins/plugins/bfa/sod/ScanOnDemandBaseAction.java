@@ -58,7 +58,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import static com.sonyericsson.jenkins.plugins.bfa.sod.ScanOnDemandBaseAction.ScanMode.BFA_SOD_BUILD_TYPE;
-import static org.apache.commons.lang.StringUtils.isBlank;
+import static org.apache.commons.lang3.StringUtils.isBlank;
 
 /**
  * Action class for scanning non scanned build.
