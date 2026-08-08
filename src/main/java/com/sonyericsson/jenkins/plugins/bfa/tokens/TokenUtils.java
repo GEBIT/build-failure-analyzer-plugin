@@ -24,7 +24,7 @@
 package com.sonyericsson.jenkins.plugins.bfa.tokens;
 
 import com.google.common.base.Splitter;
-import org.apache.commons.lang.WordUtils;
+import org.apache.commons.text.WordUtils;
 
 import java.util.ArrayList;
 import java.util.List;

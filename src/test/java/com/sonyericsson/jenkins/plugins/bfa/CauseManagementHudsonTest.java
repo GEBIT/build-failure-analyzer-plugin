@@ -42,7 +42,7 @@ import com.sonyericsson.jenkins.plugins.bfa.test.utils.Whitebox;
 import hudson.Util;
 import hudson.model.FreeStyleProject;
 import hudson.util.Secret;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Test;
 import org.jvnet.hudson.test.JenkinsRule;
 import org.jvnet.hudson.test.junit.jupiter.WithJenkins;
